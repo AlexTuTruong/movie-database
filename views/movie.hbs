@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center text-center">
+<ul class="movie_list">
+    {{#each movie}}
+        <h1>{{title}}</h1>
+        <br>
+        {{!-- Image database no longer available --}}
+        {{!-- <img src ="https://class-public.s3-website.fr-par.scw.cloud/class/movies/posters{{poster_path}}" alt = "{{title}} poster"> --}}
+        <br>
+        <p><b>Vote Average:</b> {{vote_average}}</p>
+        <p><b>Genres:</b> {{genres}}</p>
+        <p><b>Production Countries:</b> {{production_countries}}</p>
+        <p><b>Overview:</b> {{overview}}</p>
+    {{/each}}
+</ul>
+</div>
